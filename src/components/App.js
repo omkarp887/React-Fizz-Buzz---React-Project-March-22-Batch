@@ -4,7 +4,7 @@ import '../styles/App.css';
 
 const App = () => {
   const state = useState();
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(1);
   
 
   const IncNum =()=>{
@@ -23,11 +23,13 @@ const App = () => {
 
   return (
     <div id="main">
+    <div id="counter">
     <button onClick={IncNum}>Increment</button>
 
     <h1 className= {count % 5 == 0 && count % 3 == 0 ? 'fizzbuzz' : (count % 3 == 0) ? 'fizz' : (count % 5 == 0 ) ? 'buzz' : 'normal'}>{count}</h1>
     
     <button onClick={DecNum}>decrement</button>
+    </div>
     </div>
   )
   
