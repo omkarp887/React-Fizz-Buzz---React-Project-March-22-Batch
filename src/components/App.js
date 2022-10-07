@@ -3,7 +3,7 @@ import '../styles/App.css';
 
 
 const App = () => {
-  const state = useState();
+  
   const [count, setCount] = useState(1);
   
 
@@ -23,12 +23,12 @@ const App = () => {
 
   return (
     <div id="main">
-    <div id="counter">
-    <button onClick={IncNum}>Increment</button>
+    <div id='counter'>
+    <button id="increment" onClick={IncNum}>Increments</button>
 
-    <h1 className= {count % 5 == 0 && count % 3 == 0 ? 'fizzbuzz' : (count % 3 == 0) ? 'fizz' : (count % 5 == 0 ) ? 'buzz' : 'normal'}>{count}</h1>
+    <h2 className= {count % 5 == 0 && count % 3 == 0 ? 'fizzbuzz' : (count % 3 == 0) ? 'fizz' : (count % 5 == 0 ) ? 'buzz' : 'normal'}>{count}</h2>
     
-    <button onClick={DecNum}>decrement</button>
+    <button id="decrement" onClick={DecNum}>decrements</button>
     </div>
     </div>
   )
