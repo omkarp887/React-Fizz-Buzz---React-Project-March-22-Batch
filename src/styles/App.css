@@ -1,15 +1,19 @@
 .fizz{
+    /* If number is divisible 3, it will have class of "fizz" */
     background-color: red;
 }
 
 .buzz{
+    /* If number is divisible 5, it will have class of "buzz" */
     background-color: blue;
 }
 
 .fizzbuzz{
+    /* If number is divisible by 5 and 3, it will have class of "fizzbuzz" */
     background-color: yellow;
 }
 
 .normal{
+    /* If its neither of the above three cases, it will have a class of "normal" */
     background-color: pink;
 }
