@@ -17,13 +17,3 @@
     /* If its neither of the above three cases, it will have a class of "normal" */
     background-color: pink;
 }
-
-
-button{
-    margin: 10px;
-}
-
-#counter{
-    text-align: center;
-    margin-top: 50px;
-}
